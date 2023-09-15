@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins&display=swap');
+
+:root {
+    /* --primmary-color:#f77f00; */
+    --primmary-color: #f77f00;
+    --secondary-color: #4f6cb1;
+    --border-card-color: #aaaaaa;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+/* ===========  Header ============ */
+header {
+    min-width: 100vw;
+    ;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    border-radius: 5%;
+}
+
+.icon-toggle {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.navbar-brand {
+    padding: 0rem 6rem 0rem 2rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.custom-navbar {
+    background-color: var(--primmary-color);
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(14, 14, 14, 0.15);
+}
+
+.nav-link:hover {
+    box-shadow: 2px 2px 2px rgba(14, 14, 14, 0.35);
+    color: white;
+}
+
+.nav--icon {
+    font-size: 1rem;
+}
+
+.especial {
+    display: none;
+}
+
+.menu-button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--primmary-color);
+    padding: .4rem;
+}
+
+.icon-menu {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.botones-navbar-mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: .5rem 0 .5rem 0;
+}
+
+.enlace-whatsapp {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    background-color: #198754;
+}
+
+/* =========== Main ========== */
+
+.wrapper {
+    flex: 1;
+}
+
+/* =========== Nombre de la empresa ========== */
+
+.name-container {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+    width: auto;
+}
+
+.name {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    text-align: left;
+    width: auto;
+    line-height: 85%;
+    -webkit-text-stroke: 2px var(--primmary-color);
+}
+
+.name-logo {
+    max-width: 8rem;
+    max-height: 8rem;
+    justify-self: end;
+    margin-top: 1rem;
+}
+
+/* =========== Carrusel de banners ========== */
+
+.banner {
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* =========== Títulos ========== */
+
+.title,
+.desayuno-subtitle {
+    color: rgb(30, 30, 30);
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 0px var(--primmary-color);
+}
+
+.title {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #5c5c5c;
+}
+
+.desayuno-subtitle {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+/* =========== carrusel ========== */
+.carousel{
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators-dots {
+    position: relative;
+    margin-top: 3rem;
+    color: #333;
+}
+
+.carousel-indicators{
+    margin-bottom: 0;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--primmary-color);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators-dots li{
+
+    list-style-type: none;
+}
+
+/* =========== cards ========== */
+
+.contador-opciones {
+    color: #5c5c5c;
+}
+
+.card-desktop {
+    border: 1px solid var(--border-card-color);
+}
+
+.card-product {
+    width: 70%;
+    border: var(--border-card-color) 1px solid;
+}
+
+.card-header {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-bottom: none;
+}
+
+.card-body {
+    border-top: none;
+}
+
+.img-producto-container {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+}
+
+.img-producto {
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.precio {
+    font-size: 1.4rem;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.card-text {
+    text-align: justify;
+    color: rgb(73, 73, 73);
+}
+
+.card-footer {
+    border-top: var(--border-card-color) 1px solid;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233a86ff' viewBox='0 0 8 10'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233a86ff' viewBox='0 0 8 10'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* ===========  Salsas  ===========*/
+
+.salsa {
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    margin-top: 3.5rem;
+}
+
+.carne {
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.verde,
+.roja,
+.morita {
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+}
+
+.verde {
+    color: #107446;
+
+}
+
+.roja {
+    color: #d4010f;
+}
+
+.morita {
+    color: #843838;
+}
+
+.heroe-salsa {
+    color: #333;
+    font-weight: normal;
+    margin: 1rem 2rem 1rem 0;
+}
+
+.complementos {
+    /* border: red 1px solid; */
+    text-align: center;
+    padding: 1rem 0.5rem 2rem .5rem;
+}
+
+.gramos {
+    font-size: .8rem;
+}
+
+/* ===========  Contacto ============ */
+
+.contacto-container {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.celular-container {
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.celular-container div {
+    margin-bottom: 2rem;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: #107446;
+    margin-right: 1rem;
+}
+
+
+/* ===========  Formas de pago ============ */
+.forma-pago-titulo {
+    padding-left: .3rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    padding: .3rem;
+    text-transform: uppercase;
+}
+
+.card-pago {
+    border: var(--border-card-color) 1px solid;
+}
+
+.forma-pago-logos-container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forma-pago-logo {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forma-pago-logo img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+/* ===========  Botón de WhatsApp flotante ============ */
+
+.whatsapp-flotante{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 20px;
+    right: 20px;
+    background: #107446;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .35);
+    z-index: 100;
+}
+
+.whatsapp-flotante:hover{
+    text-decoration: none;
+    color: #107446;
+    background: white;
+    transition:.3s; 
+}
+/* =========== Footer ========== */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    background-color: var(--primmary-color);
+    margin-top: 3rem;
+}
+
+footer ul {
+    margin-bottom: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+footer ul li a {
+    padding: 0 2rem 0 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width: 350px) {
+    .name {
+        font-size: 2rem;
+    }
+
+    .name-logo {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .img-producto-container {
+        width: 100%;
+        height: 12rem;
+    }
+
+    .card-header {
+        font-size: 1.3rem;
+    }
+
+    .contacto-container {
+        font-size: 1.3rem;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .nav-link-mobile {
+        padding: .3rem;
+        width: 9rem;
+    }
+
+    .enlace-whatsapp,
+    .icon-toggle {
+        font-size: 1.2rem;
+    }
+
+    td {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width:576px) {
+    .img-producto-container {
+        height: 20rem;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, .35);
+        border-top-left-radius: 10px 10px;
+        border-top-right-radius: 10px 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .navbar {
+        border-top-left-radius: 10px 10px;
+        border-top-right-radius: 10px 10px
+    }
+
+    .custom-navbar {
+        background-color: white;
+    }
+
+    .navbar-brand,
+    .nav-list,
+    .nav-desktop {
+        display: none;
+        visibility: hidden;
+    }
+
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        box-shadow: none;
+    }
+
+    .icon-menu-down {
+        font-size: 1.3rem;
+    }
+
+    .iconoSuperior {
+        display: none;
+    }
+
+    .nav-link {
+        padding: .5rem;
+        width: 10rem;
+    }
+
+    #Desayunos-escritorio-container,
+    #Bebidas-escritorio-container,
+    #Snacks-escritorio-container {
+        display: none;
+        visibility: hidden;
+    }
+
+    footer {
+        margin-bottom: 60px;
+    }
+
+
+    .nav-table,
+    .btn-whatsapp-nav,
+    #menu-button {
+        display: inline;
+        visibility: visible;
+    }
+
+    .desktop,
+    .whatsapp-flotante {
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+@media screen and (min-width:769px) {
+
+    nav {
+        height: 4rem;
+    }
+
+    .nav-table,
+    .botones-navbar-mobile,
+    .Mobile,
+    .navbar-mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .celular-container,
+    .zoro-running-container {
+        width: 40%;
+        justify-content: center;
+    }
+
+    .nav-desktop {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 1rem;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .nav-link:hover {
+        box-shadow: none;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: .3s;
+    }
+
+    .img-producto-container {
+        margin-top: 1.5rem;
+    }
+
+}
